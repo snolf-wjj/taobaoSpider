@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.taobaospider.controller.MainController">
+   <children>
+       <Label layoutX="138.0" layoutY="37.0" text="账号：" />
+       <TextField fx:id="loginName" layoutX="174.0" layoutY="33.0" promptText="生意参谋账号" />
+       <Label layoutX="326.0" layoutY="37.0" text="密码：" />
+       <PasswordField fx:id="password" layoutX="362.0" layoutY="33.0" />
+       <!--<Button fx:id="login" layoutX="536.0" layoutY="33.0" mnemonicParsing="false" onAction="#login" text="登录"/>-->
+       <Button fx:id="startSpider" layoutX="513.0" layoutY="189.0" mnemonicParsing="false" onAction="#startSpider" text="生成文件" />
+      <ComboBox fx:id="category" layoutX="138.0" layoutY="189.0" prefWidth="150.0" promptText="请选择栏目" />
+      <TextField fx:id="keyword" layoutX="312.0" layoutY="189.0" prefHeight="23.0" prefWidth="161.0" promptText="关键词" />
+      <TextArea fx:id="cookie" layoutX="138.0" layoutY="70.0" prefHeight="99.0" prefWidth="366.0" promptText="登陆后的Cookie值" />
+
+   </children>
+</Pane>
